@@ -15,7 +15,7 @@ function ChatWindow(){
     const handleLogout = async() => {
         try {
             await fetch(
-                `${process.env.BACKEND_URL}auth/logout`,
+                "https://jeniai-backend.tushar-sonawane.xyz/auth/logout",
                 {
                     credentials: "include"
                 }
@@ -43,7 +43,7 @@ function ChatWindow(){
 
         try{
             const response = await fetch(
-                `${process.env.BACKEND_URL}api/chat`,
+                "https://jeniai-backend.tushar-sonawane.xyz/api/chat",
                 {
                     method: "POST",
             

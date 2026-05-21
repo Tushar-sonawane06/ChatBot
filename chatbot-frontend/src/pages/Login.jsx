@@ -5,7 +5,7 @@ const Login = () => {
     const handleGoogleLogin = () => {
 
         window.location.href =
-            `${process.env.BACKEND_URL}auth/google`;
+            "https://jeniai-backend.tushar-sonawane.xyz/auth/google";
 
     };
 

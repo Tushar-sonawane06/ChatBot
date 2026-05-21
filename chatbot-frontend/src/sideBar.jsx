@@ -23,7 +23,7 @@ function SideBar() {
         try {
 
             const response = await fetch(
-                `${process.env.BACKEND_URL}api/thread`,
+                "https://jeniai-backend.tushar-sonawane.xyz/api/thread",
                 {
                     credentials: "include"
                 }
@@ -67,7 +67,7 @@ function SideBar() {
         try {
 
             const response = await fetch(
-                `${process.env.BACKEND_URL}api/thread/${newthreadId}`,
+                `https://jeniai-backend.tushar-sonawane.xyz/api/thread/${newthreadId}`,
                 {
                     credentials: "include"
                 }
@@ -92,7 +92,7 @@ function SideBar() {
         try {
 
             await fetch(
-                `${process.env.BACKEND_URL}api/thread/${threadId}`,
+                `https://jeniai-backend.tushar-sonawane.xyz/api/thread/${threadId}`,
                 {
                     method: "DELETE",
                     credentials: "include"
