@@ -5,7 +5,7 @@ const Login = () => {
     const handleGoogleLogin = () => {
 
         window.location.href =
-            "http://localhost:8000/auth/google";
+            "https://chatbot-jikq.onrender.com/auth/google";
 
     };
 

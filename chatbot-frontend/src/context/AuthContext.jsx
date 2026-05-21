@@ -14,7 +14,7 @@ export const AuthProvider = ({ children }) => {
             try {
 
                 const response = await fetch(
-                    "http://localhost:8000/auth/me",
+                    "https://chatbot-jikq.onrender.com/auth/me",
                     {
                         credentials: "include"
                     }

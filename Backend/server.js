@@ -12,6 +12,8 @@ import authRoutes from "./routes/auth.js";
 const app = express();
 const port= 8000;
 
+app.set("trust proxy", 1);
+
 app.use(express.json());
 app.use(cors({
     origin: "http://localhost:5173",
@@ -25,8 +27,8 @@ app.use(session({
     resave: false,
     saveUninitialized: false,
     cookie: {
-        secure: false,
-        httpOnly: true
+        secure: true,
+        sameSite: "none"
     }
 }));
 

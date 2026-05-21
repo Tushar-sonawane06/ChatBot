@@ -23,7 +23,7 @@ function SideBar() {
         try {
 
             const response = await fetch(
-                "http://localhost:8000/api/thread",
+                "https://chatbot-jikq.onrender.com/api/thread",
                 {
                     credentials: "include"
                 }
@@ -67,7 +67,7 @@ function SideBar() {
         try {
 
             const response = await fetch(
-                `http://localhost:8000/api/thread/${newthreadId}`,
+                `https://chatbot-jikq.onrender.com/api/thread/${newthreadId}`,
                 {
                     credentials: "include"
                 }
@@ -92,7 +92,7 @@ function SideBar() {
         try {
 
             await fetch(
-                `http://localhost:8000/api/thread/${threadId}`,
+                `https://chatbot-jikq.onrender.com/api/thread/${threadId}`,
                 {
                     method: "DELETE",
                     credentials: "include"
