@@ -20,7 +20,7 @@ router.get("/google/callback",
 
     (req, res) => {
 
-        res.redirect("http://localhost:5173");
+        res.redirect("https://chat-bot-pearl-theta.vercel.app");
 
     }
 );
