@@ -16,7 +16,7 @@ app.set("trust proxy", 1);
 
 app.use(express.json());
 app.use(cors({
-    origin: "https://chat-bot-pearl-theta.vercel.app",
+    origin: "https://jeniai.tushar-sonawane.xyz",
     credentials: true
 }));
 

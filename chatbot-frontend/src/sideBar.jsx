@@ -23,7 +23,7 @@ function SideBar() {
         try {
 
             const response = await fetch(
-                "https://chatbot-jikq.onrender.com/api/thread",
+                `${process.env.BACKEND_URL}api/thread`,
                 {
                     credentials: "include"
                 }
@@ -67,7 +67,7 @@ function SideBar() {
         try {
 
             const response = await fetch(
-                `https://chatbot-jikq.onrender.com/api/thread/${newthreadId}`,
+                `${process.env.BACKEND_URL}api/thread/${newthreadId}`,
                 {
                     credentials: "include"
                 }
@@ -92,7 +92,7 @@ function SideBar() {
         try {
 
             await fetch(
-                `https://chatbot-jikq.onrender.com/api/thread/${threadId}`,
+                `${process.env.BACKEND_URL}api/thread/${threadId}`,
                 {
                     method: "DELETE",
                     credentials: "include"

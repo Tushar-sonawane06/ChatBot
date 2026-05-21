@@ -14,7 +14,7 @@ export const AuthProvider = ({ children }) => {
             try {
 
                 const response = await fetch(
-                    "https://chatbot-jikq.onrender.com/auth/me",
+                    "https://jeniai-backend.tushar-sonawane.xyz/auth/me",
                     {
                         credentials: "include"
                     }

@@ -15,7 +15,7 @@ function ChatWindow(){
     const handleLogout = async() => {
         try {
             await fetch(
-                "https://chatbot-jikq.onrender.com/auth/logout",
+                `${process.env.BACKEND_URL}auth/logout`,
                 {
                     credentials: "include"
                 }
@@ -43,7 +43,7 @@ function ChatWindow(){
 
         try{
             const response = await fetch(
-                "https://chatbot-jikq.onrender.com/api/chat",
+                `${process.env.BACKEND_URL}api/chat`,
                 {
                     method: "POST",
             

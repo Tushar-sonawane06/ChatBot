@@ -20,7 +20,7 @@ router.get("/google/callback",
 
     (req, res) => {
 
-        res.redirect("https://chat-bot-pearl-theta.vercel.app");
+        res.redirect("https://jeniai.tushar-sonawane.xyz");
 
     }
 );
