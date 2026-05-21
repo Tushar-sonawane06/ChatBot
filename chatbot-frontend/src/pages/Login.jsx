@@ -24,7 +24,7 @@ const Login = () => {
                     ✨ AI Powered
                 </div>
 
-                <h1>
+                <h1 id="welcome">
                     Welcome Back
                 </h1>
 
