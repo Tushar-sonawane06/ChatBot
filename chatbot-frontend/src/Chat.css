@@ -1,0 +1,177 @@
+.chats{
+    width: 100%;
+    max-width: 950px;
+    margin: 0 auto;
+    padding: 30px 20px 140px;
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+    overflow-y: auto;
+    flex: 1;
+}
+
+h1{
+    color: white;
+    margin-top: 140px;
+    font-size: 46px;
+    font-weight: 700;
+    letter-spacing: -1px;
+    text-align: center;
+}
+
+.userDiv{
+    width: 100%;
+
+    display: flex;
+    justify-content: flex-end;
+}
+
+.userMessage{
+    max-width: 75%;
+    padding: 16px 18px;
+    border-radius: 22px;
+    border-bottom-right-radius: 6px;
+    background:#2e2a2a;
+    color: white;
+    font-size: 15px;
+    line-height: 1.7;
+    word-break: break-word;
+}
+
+.groqDiv{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    color: #f3f4f6;
+}
+
+.groqDiv > *{
+    max-width: 75%;
+    padding: 16px 18px;
+    border-radius: 22px;
+    border-bottom-left-radius: 6px;
+    line-height: 1.8;
+    backdrop-filter: blur(10px);
+    overflow-x: auto;
+}
+
+.groqDiv p{
+    margin: 0;
+}
+
+.groqDiv pre{
+    margin-top: 14px;
+    padding: 16px;
+    border-radius: 16px;
+    overflow-x: auto;
+    background: #0b1220 !important;
+    border: 1px solid rgba(255,255,255,0.05);
+}
+
+.groqDiv code{
+    font-size: 14px;
+    font-family: monospace;
+}
+
+
+.chats::-webkit-scrollbar{
+    display: none;
+}
+
+.chats{
+    scrollbar-width: none;
+}
+
+@media(max-width: 768px){
+
+    .chats{
+        padding: 20px 14px 130px;
+    }
+
+    h1{
+        margin-top: 120px;
+        font-size: 34px;
+        padding: 0 16px;
+    }
+
+    .userMessage,
+    .groqDiv > *{
+        max-width: 92%;
+        font-size: 14px;
+    }
+
+}
+
+.gptMessage{
+    color: #f3f4f6;
+
+    line-height: 1.8;
+
+    overflow-x: auto;
+}
+
+.gptMessage h1,
+.gptMessage h2,
+.gptMessage h3{
+    margin: 18px 0 10px;
+}
+
+.gptMessage p{
+    margin: 10px 0;
+}
+
+.gptMessage ul,
+.gptMessage ol{
+    padding-left: 22px;
+    margin: 12px 0;
+}
+
+.gptMessage table{
+    border-collapse: collapse;
+
+    width: 100%;
+
+    margin: 16px 0;
+
+    overflow-x: auto;
+}
+
+.gptMessage th,
+.gptMessage td{
+    border: 1px solid rgba(255,255,255,0.1);
+
+    padding: 12px;
+
+    text-align: left;
+}
+
+.gptMessage th{
+    background: rgba(255,255,255,0.06);
+}
+
+.gptMessage pre{
+    padding: 16px;
+
+    border-radius: 14px;
+
+    overflow-x: auto;
+
+    margin: 14px 0;
+
+    background: #0b1220 !important;
+}
+
+.gptMessage code{
+    font-family: monospace;
+}
+
+.gptMessage blockquote{
+    border-left: 4px solid #2563eb;
+
+    padding-left: 14px;
+
+    margin: 14px 0;
+
+    color: #cbd5e1;
+}

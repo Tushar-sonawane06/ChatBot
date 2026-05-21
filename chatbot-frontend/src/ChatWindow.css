@@ -1,0 +1,224 @@
+.chatWindow{
+    background: #212121;
+
+    height: 100vh;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    position: relative;
+
+    overflow: hidden;
+}
+
+*{
+    scrollbar-width: none;
+}
+
+*::-webkit-scrollbar{
+    display: none;
+}
+
+.navbar{
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 18px 28px;
+
+    border-bottom: 1px solid rgba(255,255,255,0.04);
+
+    background: #212121;
+
+    backdrop-filter: blur(12px);
+
+    position: sticky;
+    top: 0;
+    z-index: 20;
+}
+
+#chatbot-name{
+    color: white;
+
+    font-size: 18px;
+    font-weight: 600;
+
+    letter-spacing: -0.5px;
+}
+
+.userIconDiv{
+    cursor: pointer;
+}
+
+.userIcon{
+    width: 40px;
+    height: 40px;
+
+    border-radius: 12px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: rgba(255, 255, 255, 0.05);
+
+    color: white;
+
+    transition: 0.25s ease;
+}
+
+.userIcon:hover{
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(37,99,235,0.3);
+}
+
+.chatInput{
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 18px;
+}
+
+.inputBox{
+    width: 100%;
+    max-width: 760px;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.inputBox input{
+    width: 100%;
+    border: 1px solid rgba(255,255,255,0.06);
+    background: rgba(255,255,255,0.05);
+    padding: 20px 62px 20px 20px;
+    border-radius: 18px;
+    color: white;
+    font-size: 15px;
+    transition: 0.25s ease;
+    backdrop-filter: blur(10px);
+}
+
+.inputBox input::placeholder{
+    color: #94a3b8;
+}
+
+.inputBox input:focus{
+    outline: none;
+    background: rgba(255,255,255,0.07);
+}
+
+#submit{
+    position: absolute;
+    right: 16px;
+    width: 38px;
+    height: 38px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: #cbd5e1;
+    transition: 0.25s ease;
+}
+
+#submit:hover{
+    background: rgba(255,255,255,0.08);
+    color: white;
+}
+
+.info{
+    color: #94a3b8;
+
+    font-size: 12px;
+
+    margin-top: 10px;
+}
+
+.dropDown{
+    position: absolute;
+    top: 78px;
+    right: 28px;
+    width: 220px;
+    background: #2e2a2a;
+    border: 1px solid rgba(255,255,255,0.06);
+    border-radius: 18px;
+    padding: 10px;
+    z-index: 1000;
+    box-shadow: 0 10px 35px rgba(0,0,0,0.35);
+}
+
+.dropDownItem{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 13px 14px;
+    border-radius: 12px;
+    color: #e5e7eb;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.dropDownItem:hover{
+    background: rgba(255,255,255,0.06);
+}
+
+.dropDownItem i{
+    width: 18px;
+}
+
+@media(max-width: 768px){
+    .navbar{
+        padding: 18px 18px 18px 72px;
+    }
+    #chatbot-name{
+        font-size: 17px;
+    }
+    .chatInput{
+        padding: 14px;
+    }
+    .inputBox{
+        max-width: 100%;
+    }
+    .inputBox input{
+        padding: 18px 55px 18px 18px;
+
+        font-size: 14px;
+    }
+    #submit{
+        width: 34px;
+        height: 34px;
+
+        right: 14px;
+    }
+    .dropDown{
+        width: 200px;
+
+        right: 14px;
+        top: 72px;
+    }
+}
+
+@media(max-width: 480px){
+    .navbar{
+        padding: 16px 14px 16px 68px;
+    }
+    .userIcon{
+        width: 36px;
+        height: 36px;
+
+        border-radius: 10px;
+    }
+    .inputBox input{
+        border-radius: 16px;
+    }
+}
